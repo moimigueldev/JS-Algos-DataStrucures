@@ -6,25 +6,6 @@ let Events = require('./exercises/events/index');
 
 
 
-let events = new Events();
-
-events.on('click', () => {
-  console.log('click')
-});
-events.on('click', () => {
-  console.log('click')
-});
-events.on('click', () => {
-  console.log('click')
-});
-
-
-console.log(events.trigger('click'))
-console.log(events.off('click'))
-
-console.log('events', events.events)
-
-
 
 
 
