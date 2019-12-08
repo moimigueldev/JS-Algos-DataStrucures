@@ -17,6 +17,71 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+    const midpoint = Math.floor((2 * n - 1) / 2);
+    console.log(midpoint)
+
+    // for (let row = 0; row < n; row++) {
+    //     let levels = '';
+    //     for (let col = 0; col < n * 2 -1 ; col++) {
+    //     console.log(row, col)
+        
+    //     }
+    // }
+
+}
 
 module.exports = steps;
+
+
+// FIRST SOLUTION
+// function steps(n) {
+//         let string = ' '.repeat(n);
+    
+//        for (let index = 0; index < string.length; index++) {
+//            string = string.replace(/\s/, '#')
+//            console.log(string)
+           
+//        }
+//     }
+
+// SOLUTION 2
+
+// function steps(n) {
+    //     for (let row = 0; row < n; row++) {
+    //         let stair = '';
+    
+    //         for (let col = 0; col < n; col++) {
+    //            if (col <= row) {
+    //                stair += '#'
+    //            } else {
+    //                stair += ' '
+    //            }
+    //         }
+    //         console.log(stair)
+            
+    //     }
+    // }
+    
+
+    // function steps(n, row = 0, stair = '') {
+
+    //     if (n === row) {
+    //         return;
+    //     }
+        
+    //     if (n === stair.length) {
+    //         console.log(stair)
+    //         return steps(n, row +1)
+    //     }
+    
+    //     if (stair.length <= row) {
+    //         stair += '#';
+    //     } else {
+    //         stair += ' '
+    //     }
+    
+    //     steps(n, row, stair)
+    
+    // }
+    

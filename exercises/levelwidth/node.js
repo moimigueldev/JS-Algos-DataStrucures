@@ -8,3 +8,4 @@ module.exports = class Node {
     this.children.push(new Node(data));
   }
 };
+ 

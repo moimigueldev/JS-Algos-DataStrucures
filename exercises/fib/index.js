@@ -8,6 +8,38 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+// result for 4 [0, 1, 1, 2, 3,]
+
+function fib(n) {
+    
+    if (n < 2) {
+        return n;
+    } 
+
+    return fib(n - 1) + fib(n - 2)
+    
+}
 
 module.exports = fib;
+
+// ITERATIVE SOLUTION
+// function fib(n) {
+//     let result = [0, 1];
+
+//     for (let i = 2; i < n + 1 ; i++) {
+//         result.push(result[i - 1] + result[i - 2])
+//     }
+//    return result[result.length - 1]
+
+// }
+
+
+// RECURSIVE SOLUTION
+// function fib(n, index = 2, arr = [0 , 1]) {
+
+//     if (arr.length === n + 1) return arr[arr.length - 1];
+
+//     arr.push(arr[index - 1] + arr[index - 2])
+//     return fib(n, index + 1, arr)
+
+// }

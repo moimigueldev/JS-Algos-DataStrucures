@@ -9,7 +9,7 @@ describe('Node', () => {
 
   test('Node has a data and children properties', () => {
     const n = new Node('a');
-    expect(n.data).toEqual('a');
+    expect(n.data).toEqual('a'); 
     expect(n.children.length).toEqual(0);
   });
 
