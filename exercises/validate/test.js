@@ -21,3 +21,4 @@ test('Validate recognizes an invalid BST', () => {
 
   expect(validate(n)).toEqual(false);
 });
+ 
