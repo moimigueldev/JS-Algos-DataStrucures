@@ -20,7 +20,7 @@ test('Multiple events can be registered then triggered', () => {
   events.on('click', cb1);
   events.on('click', cb2);
   events.trigger('click');
-
+ 
   expect(cb1.mock.calls.length).toBe(1);
   expect(cb2.mock.calls.length).toBe(1);
 });
