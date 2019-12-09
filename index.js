@@ -2,9 +2,18 @@ const express = require('express');
 const app = express();
 
 
-let Events = require('./exercises/events/index');
+let sort = require('./exercises/sorting/index');
 
 
+function getArray() {
+  return [100, -40, 500, -124, 0, 21, 7];
+}
+
+function getSortedArray() {
+  return [-124, -40, 0, 7, 21, 100, 500];
+}
+
+console.log(sort.mergeSort(getArray()));
 
 
 
